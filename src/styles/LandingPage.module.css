@@ -1,0 +1,51 @@
+.landingWrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images6.alphacoders.com/648/648552.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 28px;
+  padding: 1em;
+}
+
+@media (max-width: 547px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 28px;
+    padding: 1em;
+  }
+
+  .nav span {
+    margin-bottom: 15px;
+  }
+}
+
+.nav nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav nav ul li {
+  margin-right: 0.5em;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+}
+.navLinks a:hover,
+a:active {
+  text-decoration: underline;
+  filter: brightness(50%);
+}
