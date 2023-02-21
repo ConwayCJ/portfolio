@@ -1,15 +1,93 @@
+/* projects container */
 .projectsWrapper {
   width: 100%;
-  height: 100vh;
-  background-color: rgb(6, 6, 27);
+  height: auto;
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  border-top: 15px solid rgba(0, 0, 0, 0.475);
+  border-bottom: 15px solid rgba(0, 0, 0, 0.475);
+  border-collapse: collapse;
   color: white;
 }
 
+/* header  + responsive */
 .header {
-  font-size: 80px;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5em;
+  font-family: montserrat;
+}
+
+.header button a {
+  text-decoration: none;
+  color: rgb(40, 247, 40);
+}
+
+@media (max-width: 478px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .header h1 {
+    margin-bottom: 15px;
+  }
+}
+
+.header {
+  font-size: 68px;
+  font-family: 'Righteous';
 }
 
 .header button {
-  font-size: 40px;
+  font-size: 34px;
+}
+
+/* projects */
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 1em 10vw;
+}
+
+.projectsCard {
+  margin: 2em;
+  padding: 2em;
+  background-color: aliceblue;
+  filter: drop-shadow(15px 10px 4px #7eff4293);
+}
+
+.cardText h1 {
+  color: black;
+  font-size: 26px;
+  margin-top: 15px;
+  font-family: 'Righteous';
+  inline-size: 300px;
+  overflow-wrap: break-word;
+}
+
+.cardText p {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0 15px 0;
+  inline-size: 300px;
+  overflow-wrap: break-word;
+}
+
+.buttonContainer {
+  margin-top: 40px;
+}
+
+.buttonContainer button {
+  margin-right: 20px;
 }
